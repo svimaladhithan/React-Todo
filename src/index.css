@@ -6,7 +6,7 @@
 }
 
 .title {
-  color: crimson;
+ 
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -20,7 +20,7 @@
 }
 input {
   margin: 10px;
-  border: 2px solid aquamarine;
+  border: 2px solid #D9AFD9;
   width: 300px;
   border-radius: 10px;
 }
