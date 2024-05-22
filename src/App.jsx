@@ -36,7 +36,7 @@ const App = () => {
   const filteredTodos = todo.filter((ele) => {
     if (filterTodo === "All") return true;
 
-    if (filterTodo === "Completed") return ele.status === "true";
+    if (filterTodo === "Completed") return ele.status === true;
 
     if (filterTodo === "Not Completed") return ele.status === false;
   });

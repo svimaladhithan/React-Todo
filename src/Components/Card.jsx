@@ -18,7 +18,7 @@ const Card = ({ element, index, deleteTodo, editTodo, handleStatusChange }) => {
           Status: &nbsp;
           <select
             value={element.status}
-            onChange={(e) => handleStatusChange(element.id, e.target.value)}
+            onChange={(e) => handleStatusChange(element.id, e.target.value==='true')}
           >
             <option value={true}>Completed</option>
             <option value={false}>Not Completed</option>

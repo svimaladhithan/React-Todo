@@ -11,6 +11,7 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-style: italic;
 }
 .input {
   display: flex;
@@ -21,10 +22,15 @@ input {
   margin: 10px;
   border: 2px solid aquamarine;
   width: 300px;
+  border-radius: 10px;
 }
-.card {
-  background-color: rgb(400, 400, 100);
-  display: flex;
+input::placeholder {
+    color: rgb(163, 152, 152);
+    font-size: 14px;
+  }
+.card { 
+ background: linear-gradient(0deg, #ffffff 0%, #D9AFD9 99%);
+ display: flex;
   justify-content: space-between;
   height: 200px;
   width: 400px;
@@ -40,6 +46,9 @@ input {
   font-weight: bolder;
 }
 
+.todotitle{
+    font-size: larger;
+}
 .card-buttons {
   display: flex;
   justify-content: space-around;

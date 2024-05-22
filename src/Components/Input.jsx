@@ -26,16 +26,16 @@ const Input = ({ addOrEditTodo, editData, filterTodo, setFilterTodo }) => {
       <input
         type="text"
         value={title}
-        placeholder="Enter the title"
+        placeholder="Todo Title"
         onChange={(e) => setTitle(e.target.value)}
       />
       <input
         type="text"
         value={description}
-        placeholder="Enter the description"
+        placeholder="Todo Description"
         onChange={(e) => setDescription(e.target.value)}
       />
-      <button className="btn btn-success btn-sm" onClick={handleSubmit}>Add Todo</button></div>
+      <button className="btn btn-success btn-sm" disabled={title==='' || description === ''} onClick={handleSubmit}>Add Todo</button></div>
       <div className="filter">
         
       Status Filter: &nbsp;
